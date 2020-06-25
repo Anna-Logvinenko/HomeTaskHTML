@@ -1,0 +1,92 @@
+<html>
+<head>
+  <title>Page Title</title>
+  </head>
+  <meta charset="UTF-8">
+<body>
+
+
+  <h1 style="color:black" align="center">Моя цель - QA Automation Engineer</h1>
+  <div class="image">
+      <img onclick="changeImage(this)" border="6" src="image/me.jpg" alt="Anna" width="200" height="300"></div>
+
+      <script>
+      function bigImg(x) {
+        x.style.height = "320px";
+        x.style.width = "220px";
+      }
+
+      function normalImg(x) {
+        x.style.height = "300px";
+        x.style.width = "200px";
+      }
+
+</script>
+
+<script>
+var image = "image/me.jpg";
+var image2 = "image/me.3.jpg";
+var counter = 1;
+
+
+function changeImage(img) {
+    counter = counter +1;
+    img.style.height= "300px";
+    img.style.width= "auto";
+    var ostacha = counter % 2;
+console.log(counter,ostacha)
+    if (ostacha) {
+        img.src=  image;
+    } else {
+      img.src= image2;
+    }
+}
+
+</script>
+</head>
+<body>
+
+    <button onclick="alert('Я -Логвиненко Анна Евгениевна, мне 22 года')" class="button">CLICK HERE</button>
+
+ <style>
+    img {
+    border: 6px solid #e6e6e6;
+    float: right;
+    }
+    .image {
+
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-right: 350px;
+    margin-left: 80px;
+    padding: 10px;
+    }
+   .button {
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    margin-right: 410px;
+    margin-left: 560px;
+    padding: 10px;
+  }
+    </style>
+  <h2 style="color:black" align="center">Навыки и умения</h2>
+  <p>1. Развитие софт скилов - английский (на уровне чтения и выше), коммуникации, внимательность </p>
+  <p>2. Знание теории, основных понятий, определений, документации (типы тестирования, клиент-серверное взаимодействие)</p>
+  <p>3. Практика - составление тест-кейсов, баг-репортов, юзер-стори, чек-лист</p>
+  <p>4. Работа в баг-трекерах (<a href="https://jira.atlassian.com/">Jira</a> - в нашем случае, можна и другие - You Track)</p>
+  <p>5. Работа с тест-дизайном (диаграмы,)</p>
+  <p>6. Знание языка на котором ведется разработка (Python, Java, JavaScript и т.д.)</p>
+  <p>7. Знание <a href="https://www.w3schools.com/html/html_attributes.asp">HTML</a>,<a href="https://www.w3schools.com/html/html_attributes.asp">CSS</a>, <a href="https://www.w3schools.com/sql/default.asp">SQL</a></p>
+  <p>8. Работа с IDE - Xcode,Android Studio и создание эмуляторов в них</p>
+  <p>9. Знание основных команд GIT</p>
+  <p>10. Иметь представление о гайдлайнах iOS и Android</p>
+  <p>11. Работа с тест-дизайном (диаграмы)</p>
+  <p>12. Развитие навыков работы со средствами автоматического тестирования(Selenium,Appium, Katalon studio)</p>
