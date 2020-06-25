@@ -8,7 +8,7 @@
 
   <h1 style="color:black" align="center">Моя цель - QA Automation Engineer</h1>
   <div class="image">
-      <img onclick="changeImage(this)" border="6" src="image/me.jpg" alt="Anna" width="200" height="300"></div>
+      <img id="photo" border="6" src="image/me.jpg" alt="Anna" width="200" height="300"></div>
 
       <script>
       function bigImg(x) {
@@ -29,7 +29,8 @@ var image2 = "image/me.3.jpg";
 var counter = 1;
 
 
-function changeImage(img) {
+function changeImage() {
+    var img= document.getElementById('photo');
     counter = counter +1;
     img.style.height= "300px";
     img.style.width= "auto";
@@ -46,7 +47,7 @@ console.log(counter,ostacha)
 </head>
 <body>
 
-    <button onclick="alert('Я -Логвиненко Анна Евгениевна, мне 22 года')" class="button">CLICK HERE</button>
+    <button onclick= "changeImage()" class="button">CLICK HERE TO CHANGE IMAGE</button>
 
  <style>
     img {
