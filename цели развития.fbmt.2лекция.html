@@ -3,12 +3,19 @@
   <title>Page Title</title>
   </head>
   <meta charset="UTF-8">
-<body>
+<body style="background-color: #e6e6e6">
 
 
   <h1 style="color:black" align="center">Моя цель - QA Automation Engineer</h1>
   <div class="image">
       <img id="photo" border="6" src="image/me.jpg" alt="Anna" width="200" height="300"></div>
+
+      <script>
+      function alertName(){
+      var input = document.getElementById('name')
+        alert('Hello, ' + input.value)
+      }
+      </script>
 
       <script>
       function bigImg(x) {
@@ -77,6 +84,18 @@ console.log(counter,ostacha)
     margin-left: 560px;
     padding: 10px;
   }
+  .inputik {
+    border: 3px;
+    border-color: green;
+    border-style: solid;
+    width: 200px
+  }
+  .forma{
+    width: 200px;
+  }
+  .label {
+    color: #004d00;
+  }
     </style>
   <h2 style="color:black" align="center">Навыки и умения</h2>
   <p>1. Развитие софт скилов - английский (на уровне чтения и выше), коммуникации, внимательность </p>
@@ -91,3 +110,12 @@ console.log(counter,ostacha)
   <p>10. Иметь представление о гайдлайнах iOS и Android</p>
   <p>11. Работа с тест-дизайном (диаграмы)</p>
   <p>12. Развитие навыков работы со средствами автоматического тестирования(Selenium,Appium, Katalon studio)</p>
+
+<form class= "forma" onsubmit="alertName()" style= "background-color: #ccffcc">
+ <label class= "label" for="fname"><b>Enter the first name<b>:</label><br>
+ <input class="inputik" type="text" id="name"><br>
+ <input type="submit" value="Submit">
+</form>
+
+
+</html>
